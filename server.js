@@ -23,7 +23,10 @@ io.on('connection', socket => {
   // broadcast to everyone EVERYONE
   // io.emit();
 
-
+  // Runs when client disconnects
+  socket.on('disconnect', ()=> {
+    io.emit('message', 'User has Disconnected')'
+  }
  
 });
 
