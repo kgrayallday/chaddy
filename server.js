@@ -25,8 +25,8 @@ io.on('connection', socket => {
 
   // Runs when client disconnects
   socket.on('disconnect', ()=> {
-    io.emit('message', 'User has Disconnected')'
-  }
+    io.emit('message', 'User has Disconnected')
+  });
  
 });
 
